@@ -1,5 +1,6 @@
 # Notes
 
+* `ord()` returns an integer representing the unicode of a character.
 * `+=` -> `__iadd__`, if not implemented, falls back to `__add__`.
 * `*=` -> `__imul__`, if not implemented, falls back to `__mul__`.
 * `id()`: returns the "identity" of an object, guaranteed to be unique and constant for this object during its lifetime.
