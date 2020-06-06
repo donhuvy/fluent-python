@@ -1,2 +1,2 @@
 # fluent-python
-Example code and notes from the Fluent Python book
+Example code and notes from the Fluent Python book.
