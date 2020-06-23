@@ -14,11 +14,13 @@ class LineItem:
     def total(self) -> float:
         return self.price * self.quantity
 
+
 class Promotion(ABC):  # the Strategy: an Abstract Base Class
 
     @abstractmethod
     def discount(self, order):
         """Return discount as a positive dollar amount"""
+
 
 class Order:
 
@@ -45,6 +47,7 @@ class Order:
     def __repr__(self):
         fmt = '<Order total: {:.2f} due: {:.2f}>'
         return fmt.format(self.total(), self.due())
+
 
 class FidelityPromo(Promotion):  # first Concrete Strategy
     """5% discount for customers with 1000 or more fidelity points"""
