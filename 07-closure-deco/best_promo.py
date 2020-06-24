@@ -40,6 +40,7 @@ class Order:  # the Context
 promos = []
 
 def promotion(promo_func):
+    # This is really cool
     promos.append(promo_func)
     return promo_func
 

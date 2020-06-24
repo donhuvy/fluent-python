@@ -5,7 +5,9 @@
   * Extends the behavior of that function
   * Without explicitly modifying that function
   * Really just a syntactic sugar
-  * Executed as soon as the module is imported
+  * Executed as soon as the module is imported (`import time` vs `runtime`)
+  * Examples: `property`, `classmethod`, and `staticmethod`
+  * Implement decorator for `__call__` is a good approach
 
 * Closure:
   * A function that retains the bindings of the free variables that exist when the function is defined, so that they can be used later when the function is invoked and the defining scope is no longer available.
