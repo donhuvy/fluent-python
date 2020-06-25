@@ -3,26 +3,8 @@ import math
 
 
 class Vector2d:
-    '''
-    Python stores instance attributes in a per-instance
-    dict named __dict__. Dictionaries have a significant
-    memory overhead because of the underlying hash table
-    used to provide fast access. The __slots__ class
-    attribute can save a lot of memory by letting the
-    interpreter store the instance attributes in a tuple
-    instead of a dict.
-    
-    Problems with __slots__:
-     1. Need to reclare in each subclass, because the
-        inherited attribute is ignored by the interpreter.
-     2. Instances will only be able to have the attributes
-        listed in __slots__, unless you include __dict__
-        in __slots__ which defeat its purporse.
-     3. Instances cannot be targets of weak references unless
-        you remember to include __weakref__ in __slots__.
-    '''
     __slots__ = ('__x', '__y')
-    
+
     typecode = 'd'  # d for float
 
     def __init__(self, x, y):
